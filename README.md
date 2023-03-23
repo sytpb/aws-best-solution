@@ -10,7 +10,7 @@ Best practice and solution for AWS cloud
 How should you to easily fulfill this requirement?
 
 
-**Geolocation routing**
-*Key word: global user, low latency access*<br>
+**Geolocation routing**<br>
+*[Key word] global user, low latency access*<br>
 [AWS Document](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html/)    
 
