@@ -12,3 +12,5 @@ How should you to easily fulfill this requirement?
 
 
 **Geolocation routing**
+
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html
