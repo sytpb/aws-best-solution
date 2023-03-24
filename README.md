@@ -77,4 +77,24 @@ Which of the following options should the Architect implement to solve this issu
 *[explanation]*<br>
 CloudWatch doesn't monitor memory usage but only the CPU utilization, Network utilization, Disk performance, and Disk Reads/Writes.Therefore you should use  CloudWatch unified agent to collect the memory usage.  
 
+## Encryption
+**#1**.A multinational bank is storing its confidential files in an S3 bucket. The security team recently performed an audit, and the report shows that multiple files have been uploaded without 256-bit Advanced Encryption Standard (AES) server-side encryption. For added protection, the encryption key must be automatically rotated every year. The solutions architect must ensure that there would be no other unencrypted files uploaded in the S3 bucket in the future.
 
+Which of the following will meet these requirements with the LEAST operational overhead?
+
+**Create an S3 bucket policy that denies permissions to upload an object unless the request includes the s3:x-amz-server-side-encryption": "AES256" header. Enable server-side encryption with Amazon S3-managed encryption keys (SSE-S3) and rely on the built-in key rotation feature of the SSE-S3 encryption keys.**<br>
+*Key word: automatically rotated every year(built-in), SSE-S3, s3:x-amz-server-side-encryption": "AES256" header*<br>
+
+**#2**.A company is looking to store their confidential financial files in AWS which are accessed every week. The Architect was instructed to set up the storage system which uses envelope encryption and automates key rotation. It should also provide an audit trail that shows who used the encryption key and by whom for security purposes.
+
+Which combination of actions should the Architect implement to satisfy the requirement in the most cost-effective way? (Select TWO.)
+
+**using Amazon S3 to store the data and configuring Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)**
+*Key word: envelope encryption, automates key rotation, audit trail that shows who used, SSE-KMS*<br>
+
+**SSE-s3 vs SSE-KMS**
+
+SSE-KMS = Server-Side Encryption with Customer Master Keys (CMKs) Stored in AWS Key Management Service (SSE-KMS)
+
+Server-Side Encryption with Customer Master Keys (CMKs) Stored in AWS Key Management Service (SSE-KMS) – *Similar to SSE-S3*, but with some additional benefits and *charges for using* this service. There are separate permissions for the use of a CMK that provides added protection against unauthorized access of your objects in Amazon S3. SSE-KMS also provides you with an *audit trail that shows when your CMK was used and by whom*. Additionally, you can create and manage customer-managed CMKs or use AWS managed CMKs that are unique to you, your service, and your Region.
+ 
