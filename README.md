@@ -56,7 +56,7 @@ How can you automatically check and evaluate whether the current password policy
 Which of the following steps should the Architect implement to meet the above requirements?
 
 **deploy a NAT gateway in the public subnet and add a route to it from the private subnet where the web and application tiers are hosted.**<br>
-*Key word: Nat gateway, Route, Subnet
+*Key word: Nat gateway, Route, Subnet*
 
 ## Failover && High availibility
 
@@ -65,7 +65,7 @@ Which of the following steps should the Architect implement to meet the above re
 Which configuration meets the requirement with the least amount of downtime possible?
 
 **In a secondary region, create a global table of the DynamoDB table and replicate the auto-scaling group and application load balancer. Use Route 53 DNS failover to automatically route traffic to the resources in the secondary region. Set up the AWS Well-Architected Tool to easily get recommendations for improving your workloads based on the AWS best practices**<br>
-*Key word: Region failover, Route53 failover, Well-Architected Tool, DynamoDB global table
+*Key word: Region failover, Route53 failover, Well-Architected Tool, DynamoDB global table*
 
 ## Auto scaling
 **#1**.An Auto Scaling group (ASG) of Linux EC2 instances has an Amazon FSx for OpenZFS file system with basic monitoring enabled in CloudWatch. The Solutions Architect noticed that the legacy web application hosted in the ASG takes a long time to load. After checking the instances, the Architect noticed that the ASG is not launching more instances as it should be, even though the servers already have high memory usage.
@@ -73,8 +73,8 @@ Which configuration meets the requirement with the least amount of downtime poss
 Which of the following options should the Architect implement to solve this issue?
 
 **Install the CloudWatch unified agent to the EC2 instances. Set up a custom parameter in AWS Systems Manager Parameter Store with the CloudWatch agent configuration to create an aggregated metric on memory usage percentage. Scale the Auto Scaling group based on the aggregated metric**<br>
-*Key word: CloudWatch unified agent, Manager Parameter Store, metric of memory usage<br>
-*[explanation]<br>
+*Key word: CloudWatch unified agent, Manager Parameter Store, metric of memory usage*<br>
+*[explanation]*<br>
 CloudWatch doesn't monitor memory usage but only the CPU utilization, Network utilization, Disk performance, and Disk Reads/Writes.Therefore you should use  CloudWatch unified agent to collect the memory usage.  
 
 
