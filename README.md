@@ -34,7 +34,7 @@ What will you do to automatically restart the EC2 instances whenever the same ap
 
 
 ## Resource Provisioning, Security compliance
-**1**.A company has a team of developers that provisions their own resources on the AWS cloud. The developers use IAM user access keys to automate their resource provisioning and application testing processes in AWS. To ensure proper security compliance, the security team wants to automate the process of deactivating and deleting any IAM user access key that is over 120 days old.
+**1**.A company has a group of developers who manage their own resources on AWS cloud. These developers employ IAM user access keys to automate their resource provisioning and application testing processes within AWS. To maintain proper security compliance, the security team aims to automate the deactivation and deletion of any IAM user access key that is older than 90 days.
 
 Which solution will meet these requirements with the LEAST operational effort?
 
