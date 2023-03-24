@@ -63,6 +63,6 @@ Which of the following steps should the Architect implement to meet the above re
 
 Which configuration meets the requirement with the least amount of downtime possible?
 
-**In a secondary region, create a global table of the DynamoDB table and replicate the auto-scaling group and application load balancer. Use Route 53 DNS failover to automatically route traffic to the resources in the secondary region. Set up the AWS Well-Architected Tool to easily get recommendations for improving your workloads based on the AWS best practices**
+**In a secondary region, create a global table of the DynamoDB table and replicate the auto-scaling group and application load balancer. Use Route 53 DNS failover to automatically route traffic to the resources in the secondary region. Set up the AWS Well-Architected Tool to easily get recommendations for improving your workloads based on the AWS best practices**<br>
 *Key word: Region failover, Route53 failover, Well-Architected Tool, DynamoDB global table
 
