@@ -24,7 +24,7 @@ How can you implement this in AWS?
 
 
 ## EC2 
-**1**.A company has a web application hosted in AWS cloud where the application logs are sent to Amazon CloudWatch. Lately, the web application has recently been encountering some errors which can be resolved simply by restarting the instance.
+**#1**.A company has a web application hosted in AWS cloud where the application logs are sent to Amazon CloudWatch. Lately, the web application has recently been encountering some errors which can be resolved simply by restarting the instance.
 
 What will you do to automatically restart the EC2 instances whenever the same application error occurs?
 
@@ -34,14 +34,14 @@ What will you do to automatically restart the EC2 instances whenever the same ap
 
 
 ## Resource Provisioning, Security compliance
-**1**.A company has a group of developers who manage their own resources on AWS cloud. These developers employ IAM user access keys to automate their resource provisioning and application testing processes within AWS. To maintain proper security compliance, the security team aims to automate the deactivation and deletion of any IAM user access key that is older than 90 days.
+**#1**.A company has a group of developers who manage their own resources on AWS cloud. These developers employ IAM user access keys to automate their resource provisioning and application testing processes within AWS. To maintain proper security compliance, the security team aims to automate the deactivation and deletion of any IAM user access key that is older than 90 days.
 
 Which solution will meet these requirements with the LEAST operational effort?
 
 **Use the AWS Config managed rule to check if the IAM user access keys are not rotated within 90 days. Create an Amazon EventBridge (Amazon CloudWatch Events) rule for the non-compliant keys, and define a target to invoke a custom Lambda function to deactivate and delete the keys.**<br>
 *Key word: AWS Config, developer provisioning, compliance*<br>
 
-**2**.A new company policy requires IAM users to change their passwords’ minimum length to 12 characters. After a random inspection, you found out that there are still employees who do not follow the policy.
+**#2**.A new company policy requires IAM users to change their passwords’ minimum length to 12 characters. After a random inspection, you found out that there are still employees who do not follow the policy.
 
 How can you automatically check and evaluate whether the current password policy for an account complies with the company password policy?
 
@@ -51,7 +51,7 @@ How can you automatically check and evaluate whether the current password policy
 
 ## Architecture for internet access
 
-**1**.A Solutions Architect is designing the cloud architecture for the enterprise application suite of the company. Both the web and application tiers need to access the Internet to fetch data from public APIs. However, these servers should be inaccessible from the Internet.
+**#1**.A Solutions Architect is designing the cloud architecture for the enterprise application suite of the company. Both the web and application tiers need to access the Internet to fetch data from public APIs. However, these servers should be inaccessible from the Internet.
 
 Which of the following steps should the Architect implement to meet the above requirements?
 
