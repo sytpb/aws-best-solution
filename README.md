@@ -74,7 +74,7 @@ Which of the following options should the Architect implement to solve this issu
 
 **Install the CloudWatch unified agent to the EC2 instances. Set up a custom parameter in AWS Systems Manager Parameter Store with the CloudWatch agent configuration to create an aggregated metric on memory usage percentage. Scale the Auto Scaling group based on the aggregated metric**<br>
 *Key word: CloudWatch unified agent, Manager Parameter Store, metric of memory usage<br>
-[*explanation]<br>
+*[explanation]<br>
 CloudWatch doesn't monitor memory usage but only the CPU utilization, Network utilization, Disk performance, and Disk Reads/Writes.Therefore you should use  CloudWatch unified agent to collect the memory usage.  
 
 
