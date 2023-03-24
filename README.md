@@ -3,7 +3,7 @@ Best practice and solution for AWS cloud
 
 
 
-## Web Design 
+## Web Application deploy with AWS
 
 **#1**.A company has a web application that is hosted in an Auto Scaling group of EC2 instances behind an Application Load Balancer and is deployed across multiple AWS regions. The users can be found all around the globe, but the majority are from Japan and Sweden. Because of the compliance requirements in these two locations, you want the Japanese users to connect to the servers in the *ap-northeast-1* Asia Pacific (Tokyo) region, while the Swedish users should be connected to the servers in the *eu-west-1* EU (Ireland) region.
 
@@ -56,8 +56,13 @@ How can you automatically check and evaluate whether the current password policy
 Which of the following steps should the Architect implement to meet the above requirements?
 
 **deploy a NAT gateway in the public subnet and add a route to it from the private subnet where the web and application tiers are hosted.**<br>
-
 *Key word: Nat gateway, Route, Subnet
 
+**Failover && High availibility**
+**#1**.A company is running a web application on AWS. The application is made up of an Auto-Scaling group that sits behind an Application Load Balancer and an Amazon DynamoDB table where user data is stored. The solutions architect must design the application to remain available in the event of a regional failure. A solution to automatically monitor the status of your workloads across your AWS account, conduct architectural reviews and check for AWS best practices.
 
+Which configuration meets the requirement with the least amount of downtime possible?
+
+**In a secondary region, create a global table of the DynamoDB table and replicate the auto-scaling group and application load balancer. Use Route 53 DNS failover to automatically route traffic to the resources in the secondary region. Set up the AWS Well-Architected Tool to easily get recommendations for improving your workloads based on the AWS best practices**
+*Key word: Region failover, Route53 failover, Well-Architected Tool, DynamoDB global table
 
