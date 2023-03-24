@@ -40,3 +40,18 @@ Which solution will meet these requirements with the LEAST operational effort?
 
 **Use the AWS Config managed rule to check if the IAM user access keys are not rotated within 90 days. Create an Amazon EventBridge (Amazon CloudWatch Events) rule for the non-compliant keys, and define a target to invoke a custom Lambda function to deactivate and delete the keys.**<br>
 *Key word: AWS Config, developer provisioning, compliance*<br>
+
+
+## Architecture for internet access
+
+**1**.A Solutions Architect is designing the cloud architecture for the enterprise application suite of the company. Both the web and application tiers need to access the Internet to fetch data from public APIs. However, these servers should be inaccessible from the Internet.
+
+Which of the following steps should the Architect implement to meet the above requirements?
+
+**deploy a NAT gateway in the public subnet and add a route to it from the private subnet where the web and application tiers are hosted.**<br>
+
+*Key word: Nat gateway, Route, Subnet
+
+
+
+
