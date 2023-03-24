@@ -21,3 +21,15 @@ How can you implement this in AWS?
 
 **Add multi-factor authentication (MFA) to a user pool to protect the identity of your users.**<br>
 *Key word: authentication, not only user name and password, Cognito*
+
+
+## EC2 
+**1**.A company has a web application hosted in AWS cloud where the application logs are sent to Amazon CloudWatch. Lately, the web application has recently been encountering some errors which can be resolved simply by restarting the instance.
+
+What will you do to automatically restart the EC2 instances whenever the same application error occurs?
+
+**look at the existing CloudWatch logs for keywords related to the application error to create a custom metric. Then, create a CloudWatch alarm for that custom metric which invokes an action to restart the EC2 instance.**<br>
+
+*Key word: error, restart*
+
+
