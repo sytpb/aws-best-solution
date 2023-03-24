@@ -41,6 +41,13 @@ Which solution will meet these requirements with the LEAST operational effort?
 **Use the AWS Config managed rule to check if the IAM user access keys are not rotated within 90 days. Create an Amazon EventBridge (Amazon CloudWatch Events) rule for the non-compliant keys, and define a target to invoke a custom Lambda function to deactivate and delete the keys.**<br>
 *Key word: AWS Config, developer provisioning, compliance*<br>
 
+**2**.A new company policy requires IAM users to change their passwords’ minimum length to 12 characters. After a random inspection, you found out that there are still employees who do not follow the policy.
+
+How can you automatically check and evaluate whether the current password policy for an account complies with the company password policy?
+
+**Configure AWS Config to trigger an evaluation that will check the compliance for a user’s password periodically.**<br>
+*Key word: AWS Config, Compliance for password policy*<br>
+
 
 ## Architecture for internet access
 
@@ -51,7 +58,6 @@ Which of the following steps should the Architect implement to meet the above re
 **deploy a NAT gateway in the public subnet and add a route to it from the private subnet where the web and application tiers are hosted.**<br>
 
 *Key word: Nat gateway, Route, Subnet
-
 
 
 
