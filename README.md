@@ -33,3 +33,10 @@ What will you do to automatically restart the EC2 instances whenever the same ap
 [Create alarms to stop, terminate, reboot, or recover an EC2 instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingAlarmActions.html/)
 
 
+## Resource Provisioning, Security compliance
+**1**.A company has a team of developers that provisions their own resources on the AWS cloud. The developers use IAM user access keys to automate their resource provisioning and application testing processes in AWS. To ensure proper security compliance, the security team wants to automate the process of deactivating and deleting any IAM user access key that is over 90 days old.
+
+Which solution will meet these requirements with the LEAST operational effort?
+
+**Use the AWS Config managed rule to check if the IAM user access keys are not rotated within 90 days. Create an Amazon EventBridge (Amazon CloudWatch Events) rule for the non-compliant keys, and define a target to invoke a custom Lambda function to deactivate and delete the keys.**<br>
+*Key word: AWS Config, developer provisioning, compliance*<br>
