@@ -58,7 +58,8 @@ Which of the following steps should the Architect implement to meet the above re
 **deploy a NAT gateway in the public subnet and add a route to it from the private subnet where the web and application tiers are hosted.**<br>
 *Key word: Nat gateway, Route, Subnet
 
-**Failover && High availibility**
+## Failover && High availibility
+
 **#1**.A company is running a web application on AWS. The application is made up of an Auto-Scaling group that sits behind an Application Load Balancer and an Amazon DynamoDB table where user data is stored. The solutions architect must design the application to remain available in the event of a regional failure. A solution to automatically monitor the status of your workloads across your AWS account, conduct architectural reviews and check for AWS best practices.
 
 Which configuration meets the requirement with the least amount of downtime possible?
