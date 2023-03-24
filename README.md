@@ -30,7 +30,7 @@ What will you do to automatically restart the EC2 instances whenever the same ap
 
 **look at the existing CloudWatch logs for keywords related to the application error to create a custom metric. Then, create a CloudWatch alarm for that custom metric which invokes an action to restart the EC2 instance.**<br>
 
-*Key word: error, restart*
-[AWS Document](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingAlarmActions.html/)
+*Key word: error, restart*<br>
+[Create alarms to stop, terminate, reboot, or recover an EC2 instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingAlarmActions.html/)
 
 
