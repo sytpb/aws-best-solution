@@ -12,7 +12,7 @@ How should you to easily fulfill this requirement?
 
 **Geolocation routing**<br>
 *Key word: global user, low latency access*<br>
-[AWS Document](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html/)    
+[Geolocation routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html/)    
 
 
 **2**.A tech company are building their mobile forex trading application. You are hired to set up their cloud architecture in AWS and to implement a highly available, fault tolerant system. For their database, they are using DynamoDB and for authentication, they have chosen to use Cognito. Since the mobile application contains confidential financial transactions, there is a requirement to add a second authentication method that doesn't rely solely on user name and password.   
