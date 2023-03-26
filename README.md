@@ -105,4 +105,13 @@ Which combination of actions should the Architect implement to satisfy the requi
 SSE-KMS = Server-Side Encryption with Customer Master Keys (CMKs) Stored in AWS Key Management Service (SSE-KMS)
 
 Server-Side Encryption with Customer Master Keys (CMKs) Stored in AWS Key Management Service (SSE-KMS) – *Similar to SSE-S3*, but with some additional benefits and *charges for using* this service. There are separate permissions for the use of a CMK that provides added protection against unauthorized access of your objects in Amazon S3. SSE-KMS also provides you with an *audit trail that shows when your CMK was used and by whom*. Additionally, you can create and manage customer-managed CMKs or use AWS managed CMKs that are unique to you, your service, and your Region.
- 
+
+**#3**.A health organization is using a large Dedicated EC2 instance with multiple EBS volumes to host its health records web application. The EBS volumes must be encrypted due to the confidentiality of the data that they are handling and also to comply with the HIPAA (Health Insurance Portability and Accountability Act) standard.
+
+In EBS encryption, what service does AWS use to secure the volume's data at rest? (TWO CHOICES)
+
+**using your own keys in AWS Key Management Service (KMS)**<br>
+**using Amazon-managed keys in AWS Key Management Service (KMS).**<br>
+*Key word: EBS volumes's encryption, own keys + KMS, aws-managed key + KMS*
+
+
