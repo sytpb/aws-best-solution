@@ -139,7 +139,7 @@ Which of the following options is the most suitable approach to migrate the data
 
 Which of the following is the most suitable solution in this scenario?
 
-**Use IAM DB Authentication and create database accounts using the AWS-provided AWSAuthenticationPlugin plugin in MySQL.**<br>
+**-Use IAM DB Authentication and create database accounts using the AWS-provided AWSAuthenticationPlugin plugin in MySQL.**<br>
 *Key word: IAM DB Authentication, AWSAuthenticationPlugin *
 
 [explanation]IAM database authentication works with *MySQL and PostgreSQL*. With this authentication method, you don't need to use a password when you connect to a DB instance.
