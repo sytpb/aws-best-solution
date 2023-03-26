@@ -146,3 +146,17 @@ Which of the following is the most suitable solution in this scenario?
 
 An *authentication token* is a string of characters that you use instead of a password. After you generate an authentication token, it's valid for *15 minutes* before it expires. If you try to connect using an expired token, the connection request is denied.
 
+
+
+## CI CD  bule-green deployment, canary [kəˈneəri] deployment
+
+**#1**.A company has a web application hosted in their on-premises infrastructure that they want to migrate to AWS cloud. Your manager has instructed you to ensure that there is no downtime while the migration process is on-going. In order to achieve this, your team decided to divert 50% of the traffic to the new application in AWS and the other 50% to the application hosted in their on-premises infrastructure. Once the migration is over and the application works with no issues, a full diversion to AWS will be implemented. The company's VPC is connected to its on-premises network via an AWS Direct Connect connection.
+
+Which of the following are the possible solutions that you can implement to satisfy the above requirement? (TWO CHOICES)
+
+**- Use an Application Elastic Load balancer with Weighted Target Groups to divert and proportion the traffic between the on-premises and AWS-hosted application. Divert 50% of the traffic to the new application in AWS and the other 50% to the application hosted in their on-premises infrastructure.**<br>
+
+**- Use Route 53 with Weighted routing policy to divert the traffic between the on-premises and AWS-hosted application. Divert 50% of the traffic to the new application in AWS and the other 50% to the application hosted in their on-premises infrastructure.**<br>
+
+*Key word: blue-green deployment, ELB with  Weighted Target Groups, Route53 with Weighted routing policy*
+
