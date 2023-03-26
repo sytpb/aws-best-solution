@@ -75,7 +75,7 @@ Which configuration meets the requirement with the least amount of downtime poss
 **In a secondary region, create a global table of the DynamoDB table and replicate the auto-scaling group and application load balancer. Use Route 53 DNS failover to automatically route traffic to the resources in the secondary region. Set up the AWS Well-Architected Tool to easily get recommendations for improving your workloads based on the AWS best practices**<br>
 *Key word: Region failover, Route53 failover, Well-Architected Tool, DynamoDB global table*
 
-## Auto scaling
+## Auto scaling ASG, ELB, scaling policy 
 **#1**.An Auto Scaling group (ASG) of Linux EC2 instances has an Amazon FSx for OpenZFS file system with basic monitoring enabled in CloudWatch. The Solutions Architect noticed that the legacy web application hosted in the ASG takes a long time to load. After checking the instances, the Architect noticed that the ASG is not launching more instances as it should be, even though the servers already have high memory usage.
 
 Which of the following options should the Architect implement to solve this issue?
@@ -84,6 +84,14 @@ Which of the following options should the Architect implement to solve this issu
 *Key word: CloudWatch unified agent, Manager Parameter Store, metric of memory usage*<br>
 *[explanation]*<br>
 CloudWatch doesn't monitor memory usage but only the CPU utilization, Network utilization, Disk performance, and Disk Reads/Writes.Therefore you should use  CloudWatch unified agent to collect the memory usage.  
+
+
+**#2**.A company has several microservices that send messages to an Amazon SQS queue and a backend application that poll the queue to process the messages. The company also has a Service Level Agreement (SLA) which defines the acceptable amount of time that can elapse from the point when the messages are received until a response is sent. The backend operations are I/O-intensive as the number of messages is constantly growing, causing the company to miss its SLA. The Solutions Architect must implement a new architecture that improves the application's processing time and load management.
+
+Which of the following is the MOST effective solution that can satisfy the given requirement?
+
+**Create an AMI of the backend application's EC2 instance. Use the image to set up an Auto Scaling Group and configure a target tracking scaling policy based on the ApproximateAgeOfOldestMessage metric.**<br>
+*Key word: ASG, EC2, SQS, target tracking scaling policy, ApproximateAgeOfOldestMessage*
 
 ## Encryption
 **#1**.A multinational bank is storing its confidential files in an S3 bucket. The security team recently performed an audit, and the report shows that multiple files have been uploaded without 256-bit Advanced Encryption Standard (AES) server-side encryption. For added protection, the encryption key must be automatically rotated every year. The solutions architect must ensure that there would be no other unencrypted files uploaded in the S3 bucket in the future.
@@ -161,10 +169,3 @@ Which of the following are the possible solutions that you can implement to sati
 *Key word: blue-green deployment, ELB with  Weighted Target Groups, Route53 with Weighted routing policy*
 
 
-## Auto scaling, auto scale group, ELB, scaling policy 
-**#1**.A company has several microservices that send messages to an Amazon SQS queue and a backend application that poll the queue to process the messages. The company also has a Service Level Agreement (SLA) which defines the acceptable amount of time that can elapse from the point when the messages are received until a response is sent. The backend operations are I/O-intensive as the number of messages is constantly growing, causing the company to miss its SLA. The Solutions Architect must implement a new architecture that improves the application's processing time and load management.
-
-Which of the following is the MOST effective solution that can satisfy the given requirement?
-
-**Create an AMI of the backend application's EC2 instance. Use the image to set up an Auto Scaling Group and configure a target tracking scaling policy based on the ApproximateAgeOfOldestMessage metric.**<br>
-*Key word: ASG, EC2, SQS, target tracking scaling policy, ApproximateAgeOfOldestMessage*
