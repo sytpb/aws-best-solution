@@ -124,3 +124,14 @@ Which of the following are valid options that the Solutions Architect can implem
 *Key word: S3, Glacier, Standard IA, 30 days limitation*
 
 [take note]there is a constraint in S3 that objects must be stored at least *30 days* in the current storage class before you can transition them to *STANDARD_IA or ONEZONE_IA*.
+
+
+## Database migration, high availibility, security
+
+**#1**.A leading media company has recently adopted a hybrid cloud architecture which requires them to migrate their application servers and databases in AWS. One of their applications requires a heterogeneous database migration in which you need to transform your on-premises Oracle database to PostgreSQL in AWS. This entails a schema and code transformation before the proper data migration starts.   
+
+Which of the following options is the most suitable approach to migrate the database in AWS? <br>
+
+**First use the AWS Schema Conversion Tool to convert the source schema and code to match that of the target database, and then use the AWS Database Migration Service to migrate data from the source database to the target database.**<br>
+*Key word: migration, oracle->postgre in AWS, schema and code transformation *
+
