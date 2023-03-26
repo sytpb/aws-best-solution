@@ -33,6 +33,14 @@ What will you do to automatically restart the EC2 instances whenever the same ap
 [Create alarms to stop, terminate, reboot, or recover an EC2 instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingAlarmActions.html/)
 
 
+**#2**.A company has a UAT and production EC2 instances running on AWS. They want to ensure that employees who are responsible for the UAT instances don't have access to work on the production instances to minimize security risks.
+
+Which of the following would be the best way to achieve this?
+
+**Define the tags on the UAT and production servers and add a condition to the IAM policy which allows access to specific tags.**<br>
+*Key word: security access of Development resource , TAG for UAT PRD, IAM policy*
+
+
 ## Resource Provisioning, Security compliance
 **#1**.A company has a group of developers who manage their own resources on AWS cloud. These developers employ IAM user access keys to automate their resource provisioning and application testing processes within AWS. To maintain proper security compliance, the security team aims to automate the deactivation and deletion of any IAM user access key that is older than 90 days.
 
