@@ -114,4 +114,13 @@ In EBS encryption, what service does AWS use to secure the volume's data at rest
 **using Amazon-managed keys in AWS Key Management Service (KMS).**<br>
 *Key word: EBS volumes's encryption, own keys + KMS, aws-managed key + KMS*
 
+**Storage**
+**#1**.A company has both on-premises data center as well as AWS cloud infrastructure. They store their graphics, audios, videos, and other multimedia assets primarily in their on-premises storage server and use an S3 Standard storage class bucket as a backup. Their data is heavily used for only a week (7 days) but after that period, it will only be infrequently used by their customers. The Solutions Architect is instructed to save storage costs in AWS yet maintain the ability to fetch a subset of their media assets in a matter of minutes for a surprise annual data audit, which will be conducted on their cloud storage.
 
+Which of the following are valid options that the Solutions Architect can implement to meet the above requirement? 
+
+**Set a lifecycle policy in the bucket to transition the data from Standard storage class to Glacier after one week (7 days).**<br>
+**Set a lifecycle policy in the bucket to transition to S3 - Standard IA after 30 days.**<br>
+*Key word: S3, Glacier, Standard IA, 30 days limitation*
+
+[take note]there is a constraint in S3 that objects must be stored at least *30 days* in the current storage class before you can transition them to *STANDARD_IA or ONEZONE_IA*.
