@@ -75,7 +75,7 @@ Which configuration meets the requirement with the least amount of downtime poss
 **In a secondary region, create a global table of the DynamoDB table and replicate the auto-scaling group and application load balancer. Use Route 53 DNS failover to automatically route traffic to the resources in the secondary region. Set up the AWS Well-Architected Tool to easily get recommendations for improving your workloads based on the AWS best practices**<br>
 *Key word: Region failover, Route53 failover, Well-Architected Tool, DynamoDB global table*
 
-## Auto scaling ASG, ELB, scaling policy 
+## Auto scaling ASG, ELB, scaling policy
 **#1**.An Auto Scaling group (ASG) of Linux EC2 instances has an Amazon FSx for OpenZFS file system with basic monitoring enabled in CloudWatch. The Solutions Architect noticed that the legacy web application hosted in the ASG takes a long time to load. After checking the instances, the Architect noticed that the ASG is not launching more instances as it should be, even though the servers already have high memory usage.
 
 Which of the following options should the Architect implement to solve this issue?
@@ -167,5 +167,17 @@ Which of the following are the possible solutions that you can implement to sati
 **- Use Route 53 with Weighted routing policy to divert the traffic between the on-premises and AWS-hosted application. Divert 50% of the traffic to the new application in AWS and the other 50% to the application hosted in their on-premises infrastructure.**<br>
 
 *Key word: blue-green deployment, ELB with  Weighted Target Groups, Route53 with Weighted routing policy*
+
+
+## Load balancer, ELB, Route53 
+**#1**.A company plans to use Route 53 instead of an ELB to load balance the incoming request to the web application. The system is deployed to two EC2 instances to which the traffic needs to be distributed. You want to set a specific percentage of traffic to go to each instance.
+
+Which routing policy would you use?
+
+**Weighted**<br>
+*Key word: Route 53 instead of an ELB*
+[Explanation]Weighted routing lets you associate multiple resources with a single domain name (tutorialsdojo.com) or subdomain name (portal.tutorialsdojo.com) and choose how much traffic is routed to each resource. This can be useful for a variety of purposes including load balancing and testing new versions of software. You can set a specific percentage of how much traffic will be allocated to the resource by specifying the weights.
+![image](https://user-images.githubusercontent.com/12178686/227763291-eebdb9c7-9133-48ea-9127-de51efc9b789.png)
+
 
 
