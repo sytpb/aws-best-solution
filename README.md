@@ -132,6 +132,6 @@ Which of the following are valid options that the Solutions Architect can implem
 
 Which of the following options is the most suitable approach to migrate the database in AWS? <br>
 
-**First use the AWS Schema Conversion Tool to convert the source schema and code to match that of the target database, and then use the AWS Database Migration Service to migrate data from the source database to the target database.**<br>
+**-First use the AWS Schema Conversion Tool to convert the source schema and code to match that of the target database, and then use the AWS Database Migration Service to migrate data from the source database to the target database.**<br>
 *Key word: migration, oracle->postgre in AWS, schema and code transformation *
 
