@@ -160,3 +160,11 @@ Which of the following are the possible solutions that you can implement to sati
 
 *Key word: blue-green deployment, ELB with  Weighted Target Groups, Route53 with Weighted routing policy*
 
+
+## Auto scaling, auto scale group, ELB, scaling policy 
+**#1**.A company has several microservices that send messages to an Amazon SQS queue and a backend application that poll the queue to process the messages. The company also has a Service Level Agreement (SLA) which defines the acceptable amount of time that can elapse from the point when the messages are received until a response is sent. The backend operations are I/O-intensive as the number of messages is constantly growing, causing the company to miss its SLA. The Solutions Architect must implement a new architecture that improves the application's processing time and load management.
+
+Which of the following is the MOST effective solution that can satisfy the given requirement?
+
+**Create an AMI of the backend application's EC2 instance. Use the image to set up an Auto Scaling Group and configure a target tracking scaling policy based on the ApproximateAgeOfOldestMessage metric.**<br>
+*Key word: ASG, EC2, SQS, target tracking scaling policy, ApproximateAgeOfOldestMessage*
