@@ -126,7 +126,7 @@ Which of the following are valid options that the Solutions Architect can implem
 [take note]there is a constraint in S3 that objects must be stored at least *30 days* in the current storage class before you can transition them to *STANDARD_IA or ONEZONE_IA*.
 
 
-## Database migration, high availibility, security
+## Database migration, high availibility, security, authentication
 
 **#1**.A leading media company has recently adopted a hybrid cloud architecture which requires them to migrate their application servers and databases in AWS. One of their applications requires a heterogeneous database migration in which you need to transform your on-premises Oracle database to PostgreSQL in AWS. This entails a schema and code transformation before the proper data migration starts.   
 
@@ -134,4 +134,15 @@ Which of the following options is the most suitable approach to migrate the data
 
 **-First use the AWS Schema Conversion Tool to convert the source schema and code to match that of the target database, and then use the AWS Database Migration Service to migrate data from the source database to the target database.**<br>
 *Key word: migration, oracle->postgre in AWS, schema and code transformation *
+
+**#2**.A company needs secure access to its Amazon RDS for MySQL database that is used by multiple applications. Each IAM user must use a short-lived authentication token to connect to the database.
+
+Which of the following is the most suitable solution in this scenario?
+
+**Use IAM DB Authentication and create database accounts using the AWS-provided AWSAuthenticationPlugin plugin in MySQL.**<br>
+*Key word: IAM DB Authentication, AWSAuthenticationPlugin *
+
+[explanation]IAM database authentication works with *MySQL and PostgreSQL*. With this authentication method, you don't need to use a password when you connect to a DB instance.
+
+An *authentication token* is a string of characters that you use instead of a password. After you generate an authentication token, it's valid for *15 minutes* before it expires. If you try to connect using an expired token, the connection request is denied.
 
