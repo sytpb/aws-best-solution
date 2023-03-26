@@ -114,7 +114,7 @@ In EBS encryption, what service does AWS use to secure the volume's data at rest
 **using Amazon-managed keys in AWS Key Management Service (KMS).**<br>
 *Key word: EBS volumes's encryption, own keys + KMS, aws-managed key + KMS*
 
-**Storage**
+## Storage
 **#1**.A company has both on-premises data center as well as AWS cloud infrastructure. They store their graphics, audios, videos, and other multimedia assets primarily in their on-premises storage server and use an S3 Standard storage class bucket as a backup. Their data is heavily used for only a week (7 days) but after that period, it will only be infrequently used by their customers. The Solutions Architect is instructed to save storage costs in AWS yet maintain the ability to fetch a subset of their media assets in a matter of minutes for a surprise annual data audit, which will be conducted on their cloud storage.
 
 Which of the following are valid options that the Solutions Architect can implement to meet the above requirement? 
