@@ -93,6 +93,15 @@ Which of the following is the MOST effective solution that can satisfy the given
 **Create an AMI of the backend application's EC2 instance. Use the image to set up an Auto Scaling Group and configure a target tracking scaling policy based on the ApproximateAgeOfOldestMessage metric.**<br>
 *Key word: ASG, EC2, SQS, target tracking scaling policy, ApproximateAgeOfOldestMessage*
 
+
+**#2**.An application is hosted in an Auto Scaling group of EC2 instances. To improve the monitoring process, you have to configure the current capacity to increase or decrease based on a set of scaling adjustments. This should be done by specifying the scaling metrics and threshold values for the CloudWatch alarms that trigger the scaling process.
+
+Which of the following is the most suitable type of scaling policy that you should use?
+
+**Step Scaling.**<br>
+*Key word: set of scaling adjustments, step scaling*
+[Explanation] AWS recommands use target scaling > step scaling > simple scaling
+
 ## Encryption
 **#1**.A multinational bank is storing its confidential files in an S3 bucket. The security team recently performed an audit, and the report shows that multiple files have been uploaded without 256-bit Advanced Encryption Standard (AES) server-side encryption. For added protection, the encryption key must be automatically rotated every year. The solutions architect must ensure that there would be no other unencrypted files uploaded in the S3 bucket in the future.
 
