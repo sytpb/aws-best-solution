@@ -114,7 +114,9 @@ How can you implement this change in AWS?
 
 Which of the following would be the best choice to meet the requirement while still providing sub-millisecond latency for the users?
   
-  
+**For sub-millisecond latency caching, ElastiCache is the best choice.**<br>
+*Key word: session share, sub-millisecond latency, multiple AWS regions*
+[explanation]ELB sticky sessions is incorrect because the scenario *does not* require you to route a user to the *particular web server* that is managing that individual user’s session.
   
 ## Encryption
 **#1**.A multinational bank is storing its confidential files in an S3 bucket. The security team recently performed an audit, and the report shows that multiple files have been uploaded without 256-bit Advanced Encryption Standard (AES) server-side encryption. For added protection, the encryption key must be automatically rotated every year. The solutions architect must ensure that there would be no other unencrypted files uploaded in the S3 bucket in the future.
