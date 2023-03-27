@@ -9,13 +9,6 @@ Best practice and solution for AWS cloud
 
 How should you to easily fulfill this requirement?
 
-**#2**.A company has an application which use various RESTful web APIs hosted on their on-premises data center. Due to the unprecedented growth of their company, they decided to migrate their system to AWS Cloud to scale out their resources as well to minimize costs. 
-
-Which of the following should you recommend as the most cost-effective and scalable solution to meet the above requirement?
-
-**Use AWS Lambda and Amazon API Gateway**<br>
-*key word: migration, Restful web APIs, cost-effective*
-
 **Geolocation routing**<br>
 *Key word: global user, low latency access*<br>
 [Geolocation routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html/)    
@@ -28,6 +21,12 @@ How can you implement this in AWS?
 **Add multi-factor authentication (MFA) to a user pool to protect the identity of your users.**<br>
 *Key word: authentication, not only user name and password, Cognito*
 
+**#3**.A company has an application which use various RESTful web APIs hosted on their on-premises data center. Due to the unprecedented growth of their company, they decided to migrate their system to AWS Cloud to scale out their resources as well to minimize costs. 
+
+Which of the following should you recommend as the most cost-effective and scalable solution to meet the above requirement?
+
+**Use AWS Lambda and Amazon API Gateway**<br>
+*key word: migration, Restful web APIs, cost-effective*
 
 ## EC2 
 **#1**.A company has a web application hosted in AWS cloud where the application logs are sent to Amazon CloudWatch. Lately, the web application has recently been encountering some errors which can be resolved simply by restarting the instance.
