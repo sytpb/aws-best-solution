@@ -3,12 +3,18 @@ Best practice and solution for AWS cloud
 
 
 
-## Web Application deploy with AWS
+## Web Application, migration
 
 **#1**.A company has a web application that is hosted in an Auto Scaling group of EC2 instances behind an Application Load Balancer and is deployed across multiple AWS regions. The users can be found all around the globe, but the majority are from Japan and Sweden. Because of the compliance requirements in these two locations, you want the Japanese users to connect to the servers in the *ap-northeast-1* Asia Pacific (Tokyo) region, while the Swedish users should be connected to the servers in the *eu-west-1* EU (Ireland) region.
 
 How should you to easily fulfill this requirement?
 
+**#2**.A company has an application which use various RESTful web APIs hosted on their on-premises data center. Due to the unprecedented growth of their company, they decided to migrate their system to AWS Cloud to scale out their resources as well to minimize costs. 
+
+Which of the following should you recommend as the most cost-effective and scalable solution to meet the above requirement?
+
+**Use AWS Lambda and Amazon API Gateway**<br>
+*key word: migration, Restful web APIs, cost-effective*
 
 **Geolocation routing**<br>
 *Key word: global user, low latency access*<br>
