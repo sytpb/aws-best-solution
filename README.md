@@ -198,6 +198,20 @@ Which of the following are the possible solutions that you can implement to sati
 
 *Key word: blue-green deployment, ELB with  Weighted Target Groups, Route53 with Weighted routing policy*
 
+**#2**.A software development company has hundreds of Amazon EC2 instances with multiple Application Load Balancers (ALBs) across multiple AWS Regions. The public applications hosted in their EC2 instances are accessed on their on-premises network. The company needs to reduce the number of IP addresses that it needs to regularly whitelist on the corporate firewall device.
+
+Which of the following approach can be used to fulfill this requirement?  
+  
+**Use AWS Global Accelerator and create an endpoint group for each AWS Region. Associate the Application Load Balancer from each region to the corresponding endpoint group.**<br>
+*Key word:multiple regions, hundreds of Amazon EC2, IP whitelist*
+
+[explanation]AWS Global Accelerator is a service that improves the availability and performance of your applications with local or global users. It provides static IP addresses that act as a fixed entry point to your application endpoints in a single or multiple AWS Regions, such as your Application Load Balancers, Network Load Balancers, or Amazon EC2 instances.
+
+When the application usage grows, the number of IP addresses and endpoints that you need to manage also increase. AWS Global Accelerator allows you to scale your network up or down. AWS Global Accelerator lets you associate *regional resources*, such as load balancers and EC2 instances, to two static IP addresses. You only whitelist these addresses once in your client applications, firewalls, and DNS records.
+  
+With AWS Global Accelerator, you can add or remove endpoints in the AWS Regions, run *blue/green* deployment, and *A/B* test without needing to update the IP addresses in your client applications. This is particularly useful for *IoT, retail, media, automotive, and healthcare* use cases in which client applications cannot be updated frequently.
+
+If you have multiple resources in multiple regions, you can use AWS Global Accelerator to reduce the number of IP addresses. By creating an endpoint group, you can add all of your EC2 instances from a single region in that group. You can add additional endpoint groups for instances in other regions. After it, you can then associate the *appropriate ALB endpoints to each of your endpoint groups*. The created accelerator would have two static IP addresses that you can use to create a security rule in your firewall device. Instead of regularly adding the Amazon EC2 IP addresses in your firewall, you can use the static IP addresses of AWS Global Accelerator to automate the process and eliminate this repetitive task.
 
 ## Load balancer, ELB, Route53 
 **#1**.A company plans to use Route 53 instead of an ELB to load balance the incoming request to the web application. The system is deployed to two EC2 instances to which the traffic needs to be distributed. You want to set a specific percentage of traffic to go to each instance.
