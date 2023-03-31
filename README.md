@@ -228,7 +228,7 @@ Which routing policy would you use?
 The company needs to route users to the Region with the lowest latency. The company also needs automated failover between Regions.
 Which solution will meet these requirements?
 
-**Deploy a Network Load Balancer (NLB) and an associated target group. Associate the target group with the Auto Scaling group. Use the NLB as an AWS Global Accelerator endpoint in each Region. **<br>
+**Deploy a Network Load Balancer (NLB) and an associated target group. Associate the target group with the Auto Scaling group. Use the NLB as an AWS Global Accelerator endpoint in each Region.** <br>
 *Key word: NLB, across regions, ASG, UDP, Global Accelerator endpoint*
   
   
