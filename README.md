@@ -224,4 +224,12 @@ Which routing policy would you use?
 ![image](https://user-images.githubusercontent.com/12178686/227763291-eebdb9c7-9133-48ea-9127-de51efc9b789.png)
 
 
+**#2**.A company provides a Voice over Internet Protocol (VoIP) service that uses UDP connections. The service consists of Amazon EC2 instances that run in an Auto Scaling group. The company has deployments across multiple AWS Regions.
+The company needs to route users to the Region with the lowest latency. The company also needs automated failover between Regions.
+Which solution will meet these requirements?
 
+**Deploy a Network Load Balancer (NLB) and an associated target group. Associate the target group with the Auto Scaling group. Use the NLB as an AWS Global Accelerator endpoint in each Region. **<br>
+*Key word: NLB, across regions, ASG, UDP, Global Accelerator endpoint*
+  
+  
+  
